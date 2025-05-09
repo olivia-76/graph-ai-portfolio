@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Olivia Keiser – Generative AI for Work &amp; Research Portfolio</title>
+  <style>
+    :root{
+      --bg:#fefefe;
+      --primary:#047857;   /* green accent */
+      --text:#111827;      /* slate‑900 */
+      --muted:#475569;     /* slate‑600 */
+    }
+    /* ---------- reset ---------- */
+    *{box-sizing:border-box;margin:0;padding:0;}
+    body{
+      font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+      line-height:1.6;
+      background:var(--bg);
+      color:var(--text);
+      display:flex;
+      min-height:100vh;
+    }
+    a{color:var(--primary);text-decoration:none;}
+    a:hover{text-decoration:underline;}
+    h1,h2{font-family:Georgia,"Times New Roman",serif;}
+    /* ---------- layout ---------- */
+    aside{
+      flex:0 0 260px;
+      padding:2.5rem 1.5rem;
+      background:var(--bg);
+      border-right:1px solid #e2e8f0;
+      position:sticky;
+      top:0;
+      height:100vh;
+    }
+    aside h1{
+      font-size:2rem;
+      margin-bottom:2rem;
+    }
+    nav ul{list-style:none;display:flex;flex-direction:column;gap:.85rem;}
+    nav a{color:var(--muted);font-weight:500;}
+    nav a:hover,nav a:focus{color:var(--primary);}
+
+    main{
+      flex:1;
+      padding:3rem clamp(1.5rem,4vw,3rem);
+      overflow-y:auto;
+    }
+    section{max-width:60ch;margin-bottom:3.5rem;}
+    section h2{
+      font-size:2.25rem;
+      margin-bottom:1rem;
+    }
+    .about-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:1rem;
+    }
+    ul{margin-left:1.25rem;}
+    .module-list li{margin-bottom:.5rem;}
+    footer{text-align:center;font-size:.875rem;color:var(--muted);padding:2rem 0;}
+    /* ---------- responsive ---------- */
+    @media(max-width:850px){
+      body{flex-direction:column;}
+      aside{flex:none;height:auto;position:static;border-right:none;border-bottom:1px solid #e2e8f0;}
+      main{overflow:visible;padding-top:2rem;}
+      .about-grid{grid-template-columns:1fr;}
+    }
+  </style>
+</head>
+<body>
+  <aside>
+    <h1>Olivia Keiser</h1>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="#about-me">About Me</a></li>
+        <li><a href="#about-course">About the Course</a></li>
+        <li><a href="#weekly-submissions">Weekly Submissions</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main>
+    <section id="about-me">
+      <h2>About Me</h2>
+      <div class="about-grid">
+        <div>
+          <p>I am an epidemiologist and associate professor at the <strong>University of Geneva</strong> with&nbsp;over&nbsp;13&nbsp;years of research experience in global health, HIV, and infectious disease modelling.</p>
+          <p><strong>Research highlights</strong>:</p>
+          <ul>
+            <li>Led analyses that improved understanding of HIV treatment outcomes in Africa and informed treatment guidelines.</li>
+            <li>Developed open-source disease progression models used for cost-effectiveness studies.</li>
+            <li>Co‑ordinated large COVID‑19 surveillance and modelling projects supporting Swiss public health authorities and the WHO Afro region.</li>
+          </ul>
+        </div>
+        <div>
+          <p><strong>Education</strong></p>
+          <ul>
+            <li>PhD in Epidemiology – University of Bern</li>
+            <li>Master in Statistics – University of Neuchâtel</li>
+            <li>Master in Biology – University of Basel</li>
+          </ul>
+          <p><strong>Current interests</strong></p>
+          <ul>
+            <li>Applying generative AI to automate data analysis and knowledge synthesis</li>
+            <li>Developing AI-driven decision‑support tools for public health</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="about-course">
+      <h2>About the Course</h2>
+      <p><em>Generative AI for Work &amp; Research Productivity — Live Online Certification</em></p>
+      <p>This <strong>8‑week</strong> hands‑on program teaches no‑code AI tools for automating data, content, and knowledge workflows. Participants design and build practical AI solutions to boost personal and team productivity.</p>
+      <div class="about-grid">
+        <div>
+          <p><strong>Key outcomes</strong></p>
+          <ul>
+            <li>Automate document, spreadsheet, and data tasks</li>
+            <li>Create chatbots and RAG systems for project support</li>
+            <li>Generate professional visuals and presentations</li>
+            <li>Complete a real‑world capstone project</li>
+          </ul>
+        </div>
+        <div>
+          <p><strong>Course modules</strong></p>
+          <ul class="module-list">
+            <li>Documents, Presentations &amp; Websites</li>
+            <li>Automated Data Analysis</li>
+            <li>GenAI for Research &amp; Text Analysis</li>
+            <li>Custom GPTs and Chatbots</li>
+            <li>AI Workflows for Task Automation</li>
+            <li>GenAI for Communication &amp; Outreach</li>
+            <li>Capstone Project &amp; Showcase</li>
+          </ul>
+        </div>
+      </div>
+      <p><strong>Next start:</strong> 9 May 2025 · Online · 2‑hr workshops on Fridays or Sundays</p>
+    </section>
+
+    <section id="weekly-submissions">
+      <h2>My Weekly Submissions</h2>
+      <p>Links will appear here as tasks are completed.</p>
+      <ol>
+        <li>Week 1 – Coming soon</li>
+        <li>Week 2 – Coming soon</li>
+        <li>Week 3 – Coming soon</li>
+        <li>Week 4 – Coming soon</li>
+        <li>Week 5 – Coming soon</li>
+        <li>Week 6 – Coming soon</li>
+        <li>Week 7 – Coming soon</li>
+        <li>Week 8 – Coming soon</li>
+      </ol>
+    </section>
+
+    <footer>
+      © 2025 Olivia Keiser · Portfolio for “Generative AI for Work & Research”
+    </footer>
+  </main>
+</body>
+</html>
