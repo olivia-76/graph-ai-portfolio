@@ -33,6 +33,17 @@
       position:sticky;
       top:0;
       height:100vh;
+      display:flex;
+      flex-direction:column;
+      align-items:flex-start;
+    }
+    .avatar{
+      width:140px;
+      height:140px;
+      object-fit:cover;
+      border-radius:50%;
+      border:4px solid var(--primary);
+      margin-bottom:1.5rem;
     }
     aside h1{
       font-size:2rem;
@@ -63,7 +74,8 @@
     /* ---------- responsive ---------- */
     @media(max-width:850px){
       body{flex-direction:column;}
-      aside{flex:none;height:auto;position:static;border-right:none;border-bottom:1px solid #e2e8f0;}
+      aside{flex:none;height:auto;position:static;border-right:none;border-bottom:1px solid #e2e8f0;align-items:center;text-align:center;}
+      nav ul{align-items:center;}
       main{overflow:visible;padding-top:2rem;}
       .about-grid{grid-template-columns:1fr;}
     }
@@ -71,6 +83,7 @@
 </head>
 <body>
   <aside>
+    <img class="avatar" src="https://github.com/olivia-76/graph-ai-portfolio/blob/main/Fotos_Olivia_2022.jpg?raw=true" alt="Olivia Keiser">
     <h1>Olivia Keiser</h1>
     <nav aria-label="Primary">
       <ul>
